@@ -22,6 +22,7 @@ html {
 .nav {
     background-color: #3E8989;
     padding: 33px 0;
+    position: relative;
 }
 
 .nav_box {
@@ -32,9 +33,7 @@ html {
 
 .nav_box_minibox {
     display: flex;
-    gap: 289px;
-    position: relative;
-    
+    gap: 289px; 
 }
 
 .nav_list {
@@ -188,6 +187,11 @@ html {
     justify-content: space-between;
 }
 
+.about_box img {
+    max-width: 545px;
+    width: 100%;
+}
+
 .about_right {
     max-width: 545px;
     width: 100%;
@@ -195,7 +199,6 @@ html {
     flex-direction: column;
     gap: 20px;
     transform: translateY(9px);
-    height: 188px;
 }
 
 .about_text {
@@ -334,10 +337,8 @@ html {
     display: none;
 }
 
-.menu {
-    display: none;
-}
-
+.menu,
 .close {
     display: none;
+    cursor: pointer;
 }

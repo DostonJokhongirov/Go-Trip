@@ -10,6 +10,31 @@
     }
 }
 
+@media(max-width:1140px) {
+    .about_box {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .about_text {
+        text-align: justify;
+    }
+
+    .catalog_box {
+        max-width: 556px;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .catalog_card {
+        gap: 20px;
+    }
+}
+
 @media(max-width:1000px) {
     .intro {
         height: 500px;
@@ -25,6 +50,10 @@
 
     .nav_list {
         gap: 20px;
+    }
+
+    .about_title {
+        margin: 60px;
     }
 }
 
@@ -60,11 +89,27 @@
     .nav_input:focus~.search{
         opacity: 0%;
     }
+
+    .about_title {
+        margin: 40px;
+    }
+
+    .catalog_title {
+        margin: 70px 0 40px;
+    }
 }
 
 @media(max-width:800px) {
     .intro {
         height: 400px;
+    }
+
+    .nav {
+        padding: 25px 0;
+    }
+
+    .catalog_title {
+        margin: 50px 0 40px;
     }
 }
 
@@ -72,12 +117,63 @@
     .nav_box_minibox {
         gap: 100px;
     }
+
+    .intro_title {
+        font-size: 70px;
+        line-height: 100%;
+    }
+
+    .intro_text {
+        font-size: 35px;
+        margin: 15px 0 30px;  
+    }
+
+    .intro_btn {
+        padding: 13px 65px;
+    }
+
+    .about_box {
+        gap: 20px;
+    }
+
+    .about_title {
+        margin: 30px;
+    }
 }
 
 @media(max-width:700px) {
     .nav_list {
-       order: -1;
-       display: none;
+        order: -1;
+        position: fixed;
+        background-color: rgb(255, 255, 255);
+        flex-direction: column;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        padding: 30px 40px;
+        transform: translateX(-100%);
+        transition: 0.5s;
+        z-index: 99;
+    }
+
+    #chek:checked~.nav_list {
+        transform: translateX(0);
+    }
+
+    .nav_link {
+        padding: 10px 0;
+        color: #3bb6b6;
+    }
+
+    .nav_link::after {
+        background-color: #3bb6b6;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
 
     .menu {
@@ -85,9 +181,23 @@
         display: block;
     }
 
+    .nav_box_minibox {
+        gap: 180px;
+    }
+
     .nav_logo {
-        display: block;
-        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); 
+    }
+
+    .nav {
+        padding: 20px 0;
+    }
+
+    .menu img {
+        width: 42px;
     }
 }
 
@@ -96,10 +206,165 @@
     .intro {
         height: 300px;
     }
+
+    .intro_title {
+        font-size: 60px;
+        line-height: 100%;
+    }
+
+    .intro_text {
+        font-size: 30px;
+        margin: 13px 0 15px;  
+    }
+
+    .intro_btn {
+        padding: 12px 50px;
+    }
+
+    .nav_input {
+        width: 120px;
+    }
+
+    .nav {
+        padding: 15px 0;
+    }
+
+    .catalog_box {  
+        flex-wrap: nowrap;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+    .catalog_card {
+        flex-shrink: 0;
+    }
+
+    .catalog_title {
+        margin: 30px 0;
+    }
+}
+
+@media(max-width:500px) {
+    .nav_input {
+        display: none;
+    }
+
+    .search {
+        fill: white;
+        width: 35px;
+        height: 35px;
+        transform: translateY(-50%);
+    }
+
+    .about_box {
+        gap: 15px;
+    }
+
+    .about_title {
+        margin: 20px;
+    }
+
+    .about_title {
+        font-size: 35px;
+    }
+
+    .about_right {
+        gap: 10px;
+    }
+
+    .about_text {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        overflow-y: scroll;
+        font-size: 16px;
+    }
+
+    .catalog_title {
+        font-size: 28px;
+        line-height: 100%;
+    }
+
+    .catalog_card {
+        transform: scale(0.9);
+    }
+
+    .catalog_box {
+        column-gap: 10px;
+    }
+}
+
+@media(max-width:450px) {
+    .intro_title {
+        font-size: 50px;
+    }
+
+    .intro_text {
+        font-size: 25px;
+        line-height: 130%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .intro_btn {
+        padding: 8px 40px;
+        font-size: 14px;
+    }
+
+    .nav {
+        padding: 10px 0;
+    }
+
+    .catalog_title {
+        margin: 20px 0 10px;
+    }
 }
 
 @media(max-width:400px) {
     .intro {
         height: 200px;
+    }
+
+    .intro_title {
+        font-size: 40px;
+    }
+
+    .intro_text {
+        font-size: 20px;
+        line-height: 130%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .nav {
+        padding: 8px 0;
+    }
+
+    .about_title {
+        font-size: 28px;
+        line-height: 100%;
+    }
+
+    .catalog_title {
+        margin: 20px 0;
+    }
+
+    .about_text {
+        font-size: 14px;
+    }
+
+    .catalog_title {
+        margin: 20px 0 -10px;
+    }
+
+    .catalog_card {
+        transform: scale(0.8);
+    }
+}
+
+@media(max-width:350px) {
+    .about_title {
+        margin: 14px;
     }
 }
