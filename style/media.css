@@ -97,6 +97,10 @@
     .catalog_title {
         margin: 70px 0 40px;
     }
+
+    .contacts_title {
+        margin: 60px 0 40px;
+    }
 }
 
 @media(max-width:800px) {
@@ -110,6 +114,30 @@
 
     .catalog_title {
         margin: 50px 0 40px;
+    }
+
+    .contacts_title {
+        margin: 30px 0 30px;
+        line-height: 100%;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .contacts_box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contacts_list {
+        gap: 5px;
+    }
+
+    .contacts_text {
+        text-align: center;
+    }
+
+    .footer {
+        margin-top: 80px;
     }
 }
 
@@ -199,6 +227,14 @@
     .menu img {
         width: 42px;
     }
+
+    .footer {
+        margin-top: 60px;
+    }
+
+    .footer_box {
+        gap: 50px;
+    }
 }
 
 
@@ -242,6 +278,28 @@
     .catalog_title {
         margin: 30px 0;
     }
+
+    .contacts_title {
+        margin: 20px 0;
+    }
+
+    .contacts_text,
+    .contacts_link {
+        font-size: 18px;
+    }
+
+    .contacts_box {
+        gap: 15px;
+    }
+
+    .footer {
+        margin-top: 50px;
+        padding-top: 30px;
+    }
+
+    .footer_box {
+        gap: 40px;
+    }
 }
 
 @media(max-width:500px) {
@@ -253,7 +311,7 @@
         fill: white;
         width: 35px;
         height: 35px;
-        transform: translateY(-50%);
+        transform: translateY(-70%);
     }
 
     .about_box {
@@ -292,6 +350,31 @@
 
     .catalog_box {
         column-gap: 10px;
+    }
+
+    .contacts_title {
+        font-size: 28px;
+    }
+
+    .contacts_text,
+    .contacts_link {
+        font-size: 16px;
+    }
+
+    .contacts_box {
+        gap: 10px;
+    }
+
+    .contacts_list {
+        gap: 0; 
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    .footer_box {
+        gap: 30px;
     }
 }
 
@@ -361,10 +444,49 @@
     .catalog_card {
         transform: scale(0.8);
     }
+
+    .menu img {
+        width: 30px;
+    }
+
+    .nav_logo {
+        width: 80px;
+    }
+
+    .search {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer {
+        margin-top: 35px;
+        padding-top: 20px;
+    }
+
+    .footer_box {
+        gap: 15px;
+    }
+
+    .footer_link {
+        font-size: 14px;
+    }
 }
 
 @media(max-width:350px) {
     .about_title {
         margin: 14px;
+    }
+
+    .contacts_title {
+        margin: 15px 0;
+    }
+
+    .contacts_text,
+    .contacts_link {
+        font-size: 14px;
+    }
+
+    .footer {
+        margin-top: 30px;
     }
 }
